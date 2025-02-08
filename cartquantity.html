@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cart Quantity</title>
+  </head>
+  <body>
+    <p>
+      Cart Quantity
+    </p>
+
+    <p>
+      Follow these steps to see output<br>
+      Right click in blankarea -> Inspect -> Console 
+    </p>
+
+    <button onclick="
+    console.log('Cart Quantity: ' + cart);
+    ">Show Quantity</button>
+
+    <button onclick="
+    cart = cart+1;
+    console.log('Cart Quantity: ' + cart);
+    ">Add to cart</button>
+
+    <button onclick="
+    cart = cart + 2;
+    console.log('Cart Quantity: ' + cart);
+    ">+2</button>
+
+    <button onclick="
+    cart = cart + 3;
+    console.log('Cart Quantity: ' + cart);
+    ">+3</button>
+    
+    <button onclick="
+    cart = 0 ;
+    console.log('Cart Quantity reset');
+    ">Reset Cart</button>
+
+    <script>
+      let cart = 0;
+    </script>
+  </body>
+</html>
