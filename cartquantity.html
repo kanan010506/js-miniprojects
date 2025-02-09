@@ -14,23 +14,73 @@
     </p>
 
     <button onclick="
-    console.log('Cart Quantity: ' + cart);
+    console.log(`Cart Quantity: ${cart}`);
     ">Show Quantity</button>
 
     <button onclick="
-    cart = cart+1;
-    console.log('Cart Quantity: ' + cart);
+    cart += 1;
+    if(cart > 10){
+      console.log('Cart is full dont update');
+    }else{
+    console.log(`Cart Quantity: ${cart}`);}
     ">Add to cart</button>
 
     <button onclick="
-    cart = cart + 2;
-    console.log('Cart Quantity: ' + cart);
+    cart += 2;
+    if(cart > 10){
+      console.log('Cart is full dont update');
+    }else{
+    console.log(`Cart Quantity: ${cart}`);}
     ">+2</button>
 
     <button onclick="
-    cart = cart + 3;
-    console.log('Cart Quantity: ' + cart);
+    cart += 3;
+    if(cart > 10){
+      console.log('Cart is full dont update');
+    }else{
+    console.log(`Cart Quantity: ${cart}`);}
     ">+3</button>
+
+    <button onclick="
+    cart += 4;
+    if(cart > 10){
+      console.log('Cart is full dont update');
+    }else{
+    console.log(`Cart Quantity: ${cart}`);}
+    ">+4</button>
+
+    <button onclick="
+    cart += 5;
+    if(cart > 10){
+      console.log('Cart is full dont update');
+    }else{
+    console.log(`Cart Quantity: ${cart}`);}
+    ">+5</button>
+
+    <button onclick="
+    cart--;
+    if(cart < 0){
+      console.log('Cart is empty dont update');
+    }else{
+    console.log(`Cart quantity: ${cart}`);}
+    ">Remove from cart</button>
+
+    <button onclick="
+    cart -= 2;
+    if(cart < 0){
+      console.log('Cart is empty dont update');
+    }else{
+    console.log(`Cart quantity: ${cart}`);}
+    ">-2</button>
+
+    <button onclick="
+    cart -= 3;
+    if(cart < 0){
+      console.log('Cart is empty dont update');
+    }else{
+    console.log(`Cart quantity: ${cart}`);}
+    ">-3</button>
+
     
     <button onclick="
     cart = 0 ;
